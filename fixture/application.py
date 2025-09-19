@@ -6,8 +6,6 @@ from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.chrome.options import Options as ChromeO
 
 from helpers.common import Common
-from helpers.navigation import Navigation
-from helpers.search_helper import SearchHelper
 
 
 class Application:
@@ -16,9 +14,9 @@ class Application:
         self.browser = browser
         self.wd = None
         self.select = None
-        self.navigation = Navigation(self)
+        # self.navigation = Navigation(self)
         self.common = Common(self)
-        self.search = SearchHelper(self)
+        # self.search = SearchHelper(self)
         self.base_url = base_url
 
     def initialize(self):
