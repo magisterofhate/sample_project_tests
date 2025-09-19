@@ -41,5 +41,4 @@ class Application:
         self.wd.get("http://45.150.8.53/")
 
     def destroy(self):
-        self.navigation.logout()
         self.wd.quit()
